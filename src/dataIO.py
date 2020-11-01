@@ -14,10 +14,12 @@ try:
     from stl import mesh
 except:
     pass
-    print 'All dependencies not loaded, some functionality may not work'
+    print ('All dependencies not loaded, some functionality may not work')
 
-LOCAL_PATH = '/home/meetshah1995/datasets/ModelNet/3DShapeNets/volumetric_data/'
-SERVER_PATH = '/home/gpu_users/meetshah/3dgan/volumetric_data/'
+# LOCAL_PATH = '/home/meetshah1995/datasets/ModelNet/3DShapeNets/volumetric_data/'
+# SERVER_PATH = '/home/gpu_users/meetshah/3dgan/volumetric_data/'
+LOCAL_PATH = "/home/firefly/Documents/astronomy/tf-3dgan/data/3DShapeNets/volumetric_data/"
+SERVER_PATH = "/home/firefly/Documents/astronomy/tf-3dgan/data/3DShapeNets/volumetric_data/"
 
 def getVF(path):
     raw_data = tuple(open(path, 'r'))
